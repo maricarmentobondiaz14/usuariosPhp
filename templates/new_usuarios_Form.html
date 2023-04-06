@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="static/css/estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../static/css/estilos.css">
+
+    </head>
+    <body>
+        <div class="container" id="formulario">
+            <form action="../Vista/new_usuarios_Vista.php" method="post" id="usuariosform">
+                <div class="form-row ">
+                    <div class="form-group col-md-12">
+                        <div class="form-group col-md-5">
+                            <label>Usuario:</label>
+                            <input class="texto" type="text" name="usuario">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>Password: </label>
+                            <input class="texto" type="password" name="password">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row ">
+                    <div class="form-group col-md-12">
+                        <div class="form-group col-md-5">
+                            <label>Nombre:</label>
+                            <input class="texto" type="text" name="nombre">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>Direccion: </label>
+                            <input class="texto" type="text" name="direccion">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row ">
+                    <div class="form-group col-md-12">
+                        <div class="form-group col-md-5">
+                            <label>RFC:     </label>
+                            <input class="texto" type="text" name="rfc">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>Telefono:  </label>
+                            <input class="texto" type="text" name="telefono">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row ">
+                    <div class="form-group col-md-12">
+                        <div class="form-group col-md-5">
+                            <label>Email:     </label>
+                            <input class="texto" type="email" name="correo">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>Estatus:  </label>
+                            <input class="texto" type="checkbox" id="cboStatus" value="1" checked >
+                        </div>
+                    </div>
+                </div>
+                  
+
+                <div class="form-row ">
+                    <div class="form-group col-md-10">
+                        <center>
+                            <input type="submit" id="regresa"  value="Enviar">
+                        </center>
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>
